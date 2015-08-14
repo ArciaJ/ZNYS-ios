@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04581D291B78A27900FB2B3E /* GiftStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04581D241B78A27900FB2B3E /* GiftStatusManager.m */; };
-		04581D2A1B78A27900FB2B3E /* GiftWithState.m in Sources */ = {isa = PBXBuildFile; fileRef = 04581D261B78A27900FB2B3E /* GiftWithState.m */; };
-		04581D2B1B78A27900FB2B3E /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = 04581D271B78A27900FB2B3E /* Gift.m */; };
+		041F9D4A1B7DB2E500D0239E /* ConfigOfImageOverCabinet.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F9D491B7DB2E500D0239E /* ConfigOfImageOverCabinet.m */; };
+		042820C41B799A3800CA4873 /* GiftStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 042820BF1B799A3800CA4873 /* GiftStatusManager.m */; };
+		042820C51B799A3800CA4873 /* GiftWithState.m in Sources */ = {isa = PBXBuildFile; fileRef = 042820C11B799A3800CA4873 /* GiftWithState.m */; };
+		042820C61B799A3800CA4873 /* Gift.m in Sources */ = {isa = PBXBuildFile; fileRef = 042820C21B799A3800CA4873 /* Gift.m */; };
 		0487D7661B74548F00756EF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487D7651B74548F00756EF8 /* main.m */; };
 		0487D7691B74548F00756EF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487D7681B74548F00756EF8 /* AppDelegate.m */; };
-		0487D76C1B74548F00756EF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487D76B1B74548F00756EF8 /* ViewController.m */; };
-		0487D76F1B74548F00756EF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0487D76D1B74548F00756EF8 /* Main.storyboard */; };
+		0487D76C1B74548F00756EF8 /* CabinetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487D76B1B74548F00756EF8 /* CabinetViewController.m */; };
+		0487D76F1B74548F00756EF8 /* Cabinet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0487D76D1B74548F00756EF8 /* Cabinet.storyboard */; };
 		0487D7711B74548F00756EF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0487D7701B74548F00756EF8 /* Images.xcassets */; };
 		0487D7741B74548F00756EF8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0487D7721B74548F00756EF8 /* LaunchScreen.xib */; };
 		0487D7801B74548F00756EF8 /* ZNYSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0487D77F1B74548F00756EF8 /* ZNYSTests.m */; };
@@ -30,20 +31,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04581D231B78A27900FB2B3E /* GiftStatusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiftStatusManager.h; path = ZNYS/GiftManager/GiftStatusManager.h; sourceTree = "<group>"; };
-		04581D241B78A27900FB2B3E /* GiftStatusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiftStatusManager.m; path = ZNYS/GiftManager/GiftStatusManager.m; sourceTree = "<group>"; };
-		04581D251B78A27900FB2B3E /* Gift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gift.h; path = ZNYS/GiftManager/Gift.h; sourceTree = "<group>"; };
-		04581D261B78A27900FB2B3E /* GiftWithState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GiftWithState.m; path = ZNYS/GiftManager/GiftWithState.m; sourceTree = "<group>"; };
-		04581D271B78A27900FB2B3E /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gift.m; path = ZNYS/GiftManager/Gift.m; sourceTree = "<group>"; };
-		04581D281B78A27900FB2B3E /* GiftWithState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GiftWithState.h; path = ZNYS/GiftManager/GiftWithState.h; sourceTree = "<group>"; };
+		041F9D481B7DB2E500D0239E /* ConfigOfImageOverCabinet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigOfImageOverCabinet.h; sourceTree = "<group>"; };
+		041F9D491B7DB2E500D0239E /* ConfigOfImageOverCabinet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigOfImageOverCabinet.m; sourceTree = "<group>"; };
+		042820BD1B79965800CA4873 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		042820BE1B799A3800CA4873 /* GiftStatusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftStatusManager.h; sourceTree = "<group>"; };
+		042820BF1B799A3800CA4873 /* GiftStatusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftStatusManager.m; sourceTree = "<group>"; };
+		042820C01B799A3800CA4873 /* Gift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gift.h; sourceTree = "<group>"; };
+		042820C11B799A3800CA4873 /* GiftWithState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiftWithState.m; sourceTree = "<group>"; };
+		042820C21B799A3800CA4873 /* Gift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gift.m; sourceTree = "<group>"; };
+		042820C31B799A3800CA4873 /* GiftWithState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiftWithState.h; sourceTree = "<group>"; };
 		0487D7601B74548F00756EF8 /* ZNYS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZNYS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0487D7641B74548F00756EF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0487D7651B74548F00756EF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0487D7671B74548F00756EF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0487D7681B74548F00756EF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0487D76A1B74548F00756EF8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0487D76B1B74548F00756EF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0487D76E1B74548F00756EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0487D76A1B74548F00756EF8 /* CabinetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CabinetViewController.h; sourceTree = "<group>"; };
+		0487D76B1B74548F00756EF8 /* CabinetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CabinetViewController.m; sourceTree = "<group>"; };
+		0487D76E1B74548F00756EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Cabinet.storyboard; sourceTree = "<group>"; };
 		0487D7701B74548F00756EF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0487D7731B74548F00756EF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0487D7791B74548F00756EF8 /* ZNYSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZNYSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,18 +73,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04581D2C1B78A28300FB2B3E /* GiftManager */ = {
+		041F9D461B7DB29000D0239E /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				04581D231B78A27900FB2B3E /* GiftStatusManager.h */,
-				04581D241B78A27900FB2B3E /* GiftStatusManager.m */,
-				04581D251B78A27900FB2B3E /* Gift.h */,
-				04581D261B78A27900FB2B3E /* GiftWithState.m */,
-				04581D271B78A27900FB2B3E /* Gift.m */,
-				04581D281B78A27900FB2B3E /* GiftWithState.h */,
+				041F9D471B7DB2B200D0239E /* ConfigOfImagOverCabinet */,
+				042820C71B799ADC00CA4873 /* GiftManagement */,
 			);
-			name = GiftManager;
-			path = ..;
+			name = HomePage;
+			sourceTree = "<group>";
+		};
+		041F9D471B7DB2B200D0239E /* ConfigOfImagOverCabinet */ = {
+			isa = PBXGroup;
+			children = (
+				041F9D481B7DB2E500D0239E /* ConfigOfImageOverCabinet.h */,
+				041F9D491B7DB2E500D0239E /* ConfigOfImageOverCabinet.m */,
+			);
+			name = ConfigOfImagOverCabinet;
+			sourceTree = "<group>";
+		};
+		042820C71B799ADC00CA4873 /* GiftManagement */ = {
+			isa = PBXGroup;
+			children = (
+				042820BE1B799A3800CA4873 /* GiftStatusManager.h */,
+				042820BF1B799A3800CA4873 /* GiftStatusManager.m */,
+				042820C01B799A3800CA4873 /* Gift.h */,
+				042820C11B799A3800CA4873 /* GiftWithState.m */,
+				042820C21B799A3800CA4873 /* Gift.m */,
+				042820C31B799A3800CA4873 /* GiftWithState.h */,
+			);
+			name = GiftManagement;
 			sourceTree = "<group>";
 		};
 		045AAA5E1B775B98001360F9 /* Resources */ = {
@@ -112,14 +133,15 @@
 		0487D7621B74548F00756EF8 /* ZNYS */ = {
 			isa = PBXGroup;
 			children = (
-				04581D2C1B78A28300FB2B3E /* GiftManager */,
+				041F9D461B7DB29000D0239E /* HomePage */,
 				0487D7671B74548F00756EF8 /* AppDelegate.h */,
 				0487D7681B74548F00756EF8 /* AppDelegate.m */,
-				0487D76A1B74548F00756EF8 /* ViewController.h */,
-				0487D76B1B74548F00756EF8 /* ViewController.m */,
-				0487D76D1B74548F00756EF8 /* Main.storyboard */,
+				0487D76A1B74548F00756EF8 /* CabinetViewController.h */,
+				0487D76B1B74548F00756EF8 /* CabinetViewController.m */,
+				0487D76D1B74548F00756EF8 /* Cabinet.storyboard */,
 				0487D7701B74548F00756EF8 /* Images.xcassets */,
 				0487D7721B74548F00756EF8 /* LaunchScreen.xib */,
+				042820BD1B79965800CA4873 /* Config.h */,
 				0487D7631B74548F00756EF8 /* Supporting Files */,
 			);
 			path = ZNYS;
@@ -231,7 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0487D76F1B74548F00756EF8 /* Main.storyboard in Resources */,
+				0487D76F1B74548F00756EF8 /* Cabinet.storyboard in Resources */,
 				0487D7741B74548F00756EF8 /* LaunchScreen.xib in Resources */,
 				0487D7711B74548F00756EF8 /* Images.xcassets in Resources */,
 			);
@@ -251,12 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0487D76C1B74548F00756EF8 /* ViewController.m in Sources */,
-				04581D2A1B78A27900FB2B3E /* GiftWithState.m in Sources */,
+				0487D76C1B74548F00756EF8 /* CabinetViewController.m in Sources */,
+				042820C51B799A3800CA4873 /* GiftWithState.m in Sources */,
 				0487D7691B74548F00756EF8 /* AppDelegate.m in Sources */,
-				04581D2B1B78A27900FB2B3E /* Gift.m in Sources */,
+				042820C61B799A3800CA4873 /* Gift.m in Sources */,
+				041F9D4A1B7DB2E500D0239E /* ConfigOfImageOverCabinet.m in Sources */,
 				0487D7661B74548F00756EF8 /* main.m in Sources */,
-				04581D291B78A27900FB2B3E /* GiftStatusManager.m in Sources */,
+				042820C41B799A3800CA4873 /* GiftStatusManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,12 +302,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0487D76D1B74548F00756EF8 /* Main.storyboard */ = {
+		0487D76D1B74548F00756EF8 /* Cabinet.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0487D76E1B74548F00756EF8 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Cabinet.storyboard;
 			sourceTree = "<group>";
 		};
 		0487D7721B74548F00756EF8 /* LaunchScreen.xib */ = {
@@ -383,8 +406,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZNYS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -393,8 +418,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZNYS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

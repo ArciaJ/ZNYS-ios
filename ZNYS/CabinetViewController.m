@@ -8,9 +8,24 @@
 
 #import "CabinetViewController.h"
 #import "Config.h"
+#import "ConfigOfImageOverCabinet.h"
+
 @interface CabinetViewController ()
 
-@property (strong, nonatomic) IBOutlet UIView *cabinetView;
+@property (nonatomic) int currentPageNumberOfCabinet;
+
+@property (strong, nonatomic) NSArray *listOfImageOverCabinet;//首页卡通形象属性列表
+
+@property (strong, nonatomic) IBOutlet UIView *cabinetView;     //礼品柜视图
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageOverCabinet;   //首页卡通人头
+
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *heightConstraintOfHomePageCartoon;       //首页卡通人头高度约束
+
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *constraintBetweenCartoonAndCabinet;     //首页卡通形象与礼品柜之间的y坐标约束
+
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;        //盛放礼品柜视图的滑动视图
+
 @property (strong,nonatomic) UIPageControl *cabinetPageControl;
 - (IBAction)synchronize:(id)sender;
 
@@ -28,8 +43,20 @@
     [self.cabinetPageControl addTarget:self action:@selector(pageChanged:) forControlEvents:UIControlEventValueChanged];
     [self.cabinetView addSubview:self.cabinetPageControl];
     
+    //获取当前礼品柜页数
+    [self getCurrentPageNumberOfCabinet];
+    
+    //读取首页卡通形象属性列表
+    [self loadConfigListOfImageOverCabinet];
+    
+    //动态调整卡通形象
+    [self adjustImageOverCabinet];
+    
     //初始化奖品状态管理器
     self.giftStatusManager = [[GiftStatusManager alloc] init];
+    
+    //输出Debug的Log信息
+    [self debugLog];
     
     NSArray *cabinetSubViews = [self.cabinetPageControl subviews];
     
@@ -70,6 +97,38 @@
 #endif
     }
     
+}
+
+- (void)adjustImageOverCabinet
+{
+    ConfigOfImageOverCabinet *currentConfigOfImageOverCabinet;
+    currentConfigOfImageOverCabinet = self.listOfImageOverCabinet[self.currentPageNumberOfCabinet];
+    /*
+    CGRect rect = self.imageOverCabinet.frame;
+    rect.origin.y = self.cabinetView.frame.origin.y - self.imageOverCabinet.frame.size.height - currentConfigOfImageOverCabinet.ratio * self.cabinetView.frame.size.height;
+    self.imageOverCabinet.frame = rect;
+     */
+    self.constraintBetweenCartoonAndCabinet.constant = -((double)1.0 -currentConfigOfImageOverCabinet.ratio) * self.heightConstraintOfHomePageCartoon.constant;
+}
+
+- (void)debugLog
+{
+   
+    
+}
+
+//未完成
+- (void)loadConfigListOfImageOverCabinet
+{
+    ConfigOfImageOverCabinet *cfi = [ConfigOfImageOverCabinet alloc];
+    cfi.ratio = 0.7042641;
+    self.listOfImageOverCabinet = [[NSArray alloc] initWithObjects:cfi,nil];
+}
+
+- (int)getCurrentPageNumberOfCabinet
+{
+    //返回的页码数从0开始编码
+    return 0;
 }
 
 - (IBAction)synchronize:(id)sender
